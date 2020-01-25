@@ -1,0 +1,12 @@
+/* minor CSS reset */
+/* You should not need to change anything here */
+html, body, div, h1, h2, p, ul, li {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* ADD CSS BELOW */

@@ -1,0 +1,61 @@
+/* minor CSS reset */
+/* You should not need to change anything here */
+html, body, div, h1, h2, p, ul, li {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* Corrupted CSS below */
+/* ------------------- */
+b*** {
+    bac******d: #eaeaee;
+    ****-**mily: 'Yanone Kaffeesatz', sans-serif;
+    ***t-si*e: 24px;
+    max-*****: 600px;
+    margin: 0 ****;
+    padding: 32**;
+}
+
+h1, h2 {
+    $#%$#^#$%#$%: 'Bangers', cursive;
+}
+
+#h2 {
+    text-decoration: underline;
+}
+
+.centered {
+    text*****n: centre;
+}
+
+.title {
+    ***t-size: 48px;
+}
+
+.content {
+    ......................;
+    ...........: 5px;
+    ............: 48px;
+    ........: 20px;
+}
+
+.content ul {
+    margin-top: .....;
+    padding-left: .....;
+}
+
+.element {
+    list-*****-type: square;
+}
+
+.first {
+    color: #ffffff;
+}
+
+.second {
+    font-weight: cold;
+}

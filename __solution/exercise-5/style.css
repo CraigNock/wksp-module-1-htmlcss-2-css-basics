@@ -1,0 +1,57 @@
+/* minor CSS reset */
+/* You should not need to change anything here */
+html, body, div, h1, h2, p, ul, li {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* Corrupted CSS below */
+/* ------------------- */
+body {
+    background: #eaeaee;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 24px;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 32px;
+}
+
+h1, h2 {
+    font-family: 'Bangers', cursive;
+}
+
+.h2 {
+    text-decoration: underline;
+}
+
+.centered {
+    text-align: center;
+}
+
+.title {
+    font-size: 48px;
+}
+
+.content {
+    background-color: #ffffff;
+    border-radius: 5px;
+    margin-top: 48px;
+    padding: 20px;
+}
+
+.content ul {
+    margin-top: 16px;
+    padding-left: 20px;
+}
+
+.element {
+    list-style-type: square;
+}
+
+.second {
+    font-weight: bold;
+}

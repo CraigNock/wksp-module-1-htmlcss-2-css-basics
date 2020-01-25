@@ -1,0 +1,15 @@
+p {
+    margin: 0;
+}
+
+.one {
+    background-color: pink;
+}
+
+.two {
+    background-color: fuchsia;
+}
+
+.three {
+    font-size: 5em;
+}
