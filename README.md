@@ -2,7 +2,7 @@
 
 ## Exercise 1
 
-_Questions located in the exercise folder_
+_...nothing to see here..._
 
 ## Exercise 2 to Exercise 9
 
@@ -10,12 +10,14 @@ _Unless specified in the exercise, don't worry about the fonts. Some of the scre
 
 Each exercise folder contains a README file with the exercise parameters.
 
-## Extra exercises
-
-The exercises in the following links will help you get more practice with CSS selectors, CSS Grid, and Flexbox.
-
-### Links
+### Links to more practice
 
 - [CSS Selectors](https://flukeout.github.io/)
 - [Flexbox](https://flexboxfroggy.com/)
 - [Grid](https://cssgridgarden.com/)
+
+## Additional Resources
+
+- [Complete Guide to Flexbox]()
+- [Flexbox.help](https://flexbox.help/)
+- [Flexbox.ninja](https://flexbox.ninja/)
