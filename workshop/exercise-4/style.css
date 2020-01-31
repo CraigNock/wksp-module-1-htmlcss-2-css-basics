@@ -1,27 +1,35 @@
-#centered {
+.centered {
     text-align: center;
 }
 
-.title {
+#title {
     font-size: 3rem;
 }
 
-subtitle {
+#subtitle {
     font-size: 1.5rem;
 }
 
-.div {
+div, .centered {
     background-color: gray;
+    margin: 0px;
 }
 
-#li {
+li {
     list-style-type: none;
+    font-size: 15px;
 }
 
-content {
+#content {
     text-decoration: underline;
 }
 
-monospaced {
+.monospaced {
     font-family: monospace;
+    ;
+}
+h2 {
+    font-size: 15px;
+    font-weight: 1;
+    margin: 0px;
 }

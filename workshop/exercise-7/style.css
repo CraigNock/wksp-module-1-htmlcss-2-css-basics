@@ -10,3 +10,64 @@ html, body, div, h1, h2, p, ul, li {
 }
 
 /* ADD CSS BELOW */
+
+body {
+	max-width: auto;
+	max-height: 600px;
+	max-width: 2000px;
+	margin: 0 auto;
+}
+
+h1 {
+	font-size: 60px;
+	font-family: 'Bangers', cursive;
+	text-align: center;
+}
+
+.section{
+
+}
+
+h2 {
+	font-size: 40px;
+	font-family: 'Bangers', cursive;
+	margin-bottom: 20px;
+}
+
+h3 {
+	font-size: 30px;
+	font-family: 'Bangers', cursive;
+	margin-bottom: 20px;
+	margin-top: 0px;
+	text-align: center;
+}
+
+.row {
+	display: flex;
+	flex-direction: row;
+	justify-content: left;
+	align-items: center;
+	list-style: none;
+}
+
+.col {
+	display: flex
+	align_items: center;
+	justify-content: center;
+	border: 3px dashed gray;
+	padding: 30px;
+	background-color: rgb(226, 230, 235);
+	margin: 20px;
+	height: 260px;
+}
+
+.block{
+	/*for image containment,
+	currently wraps on window shrink*/
+}
+
+.image {
+	max-width: 350px;
+	max-height: 200px;
+	margin: 5px;
+}
