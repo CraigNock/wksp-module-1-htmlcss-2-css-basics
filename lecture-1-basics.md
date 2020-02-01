@@ -14,7 +14,8 @@ _*actually it's Cascading Style Sheets_
 - CSS is used to change page layout, colors, fonts, text-sizes, image size, etc…
 - You can do almost anything _presentational_ with CSS.
 - You are limited only by your knowledge of CSS.
-
+ 
+ (can also add images using css)
 ---
 
 ## Link CSS to an HTML page
@@ -35,9 +36,12 @@ CSS Selectors are used to specify on which elements to apply styling.
 
 | Type  | Example     | Note  |
 | ----- | ----------- | ----- |
-| class | `.my-class` | 👍👍  |
-| tag   | `body`      |  👍   |
-| id    | `#bacon`    |  🚫   |
+| class | `.my-class` | 👍👍  | fastest
+| tag   | `body`      |  👍   | fast
+| id    | `#bacon`    |  🚫   | eh
+
+remember id is unique, don't use in css (reserve for javascript)
+
 
 ---
 
@@ -56,6 +60,8 @@ h1 {
 ### Example (using classes):
 
 `<h1 class="blog-title">My Amazing Blog</h1>
+
+for css never use caps or spaces. (spaces makes multiple classes)
 `
 ```css
 .blog-title {
@@ -81,7 +87,7 @@ h1 {
 When styling HTML, we should
 
 - ALWAYS use classes.
-- SOMETIMES use HTML tags.
+- SOMETIMES use HTML tags. (ie p div h3)
 - NEVER use ids.
 - NEVER EVER use ids. 🙏
 

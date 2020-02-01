@@ -31,7 +31,9 @@ Write the CSS to make the cat text blue.
 ```
 
 ```css
-/* css here */
+.feline {
+    color: blue;
+}
 
 ```
 
@@ -48,7 +50,9 @@ Write the CSS to make the cat text blue.
 ```
 
 ```css
-/* css here */
+h2 {
+    color: blue;
+}
 
 ```
 
@@ -64,7 +68,9 @@ Write the CSS to make the cat text blue.
 ```
 
 ```css
-/* css here */
+.royalcat {
+    color: blue;
+}
 
 ```
 
@@ -81,7 +87,9 @@ Write the CSS to make the dogs text red.
 ```
 
 ```css
-/* css here */
+.canine {
+    color:red;
+}
 
 ```
 
@@ -98,7 +106,9 @@ Write the CSS to make the dogs text red.
 ```
 
 ```css
-/* css here */
+h1 {
+    color:red;
+}
 
 ```
 
@@ -117,6 +127,8 @@ What color is the `p` element?
 p {
     color: red
 }
+
+p is blue as class has priority
 
 ```
 
@@ -150,9 +162,10 @@ Every HTML element is a box that has 4 properties.
 --- 
 
 - Shorthand is best
-    - `margin: top | right | bottom | left`
+    - `margin: top | right | bottom | left`     (clockwise)
     - `margin: 20px 10px 5px 0`
-    - `margin: 20px 10px`
+    - `margin: 20px 10px` (top/bottom, right/left) cycles
+    - 20px(top) 10px (right/left) 5px(bottom)
     - `margin: 20px`
 
 ---
@@ -171,6 +184,8 @@ What is the width and height of this box?
     padding: 25px;
     width: 100px;
 }
+
+height and width refers to the content+padding
 ```
 
 ---
@@ -181,9 +196,15 @@ We can fix this with the `box-sizing` CSS property.
 * {
     box-sizing: border-box;
 }
+
+for when you want it to include the border (but not the margin)
+height and width refers to everything inside the border
+
 ```
 
 _What is the meaning of `*`?_
+
+It means EVERTHING
 
 ---
 
@@ -194,9 +215,19 @@ _What is the meaning of `*`?_
 ## The [Display](https://www.w3schools.com/cssref/pr_class_display.asp) property
 
 - block
+
+block level elemt, new line, takes the entire width
 - inline-block
+
+formatted as inline, but can apply height and width
+(generally use over inline)
 - inline
+
+follows on line until wrap (height, width will have no effect)
 - none
+
+element completely removed
+
 - _there are many more_
 
 ---
@@ -255,6 +286,8 @@ _What is the meaning of `*`?_
 ### vs. 
 ### [`visibility: hidden`](https://www.w3schools.com/css/tryit.asp?filename=trycss_visibility_hidden)
 
+doesnt alter flow, just make not visible (ie leaves gap/space where image would take up)
+
 ---
 
 ## The [Position](https://www.w3schools.com/css/css_positioning.asp) property
@@ -275,13 +308,13 @@ _What is the meaning of `*`?_
 ### `position: relative`
 
 - It is positioned relative to its normal position.
-- Setting the top, right, bottom, and left properties of a relatively-positioned element will cause it to be adjusted away from its normal position. _Other content will not be adjusted to fit into any gap left by the element._
+- Setting the top, right, bottom, and left properties of a relatively-positioned element will cause it to be adjusted away from its normal position. _***Other content will not be adjusted to fit into any gap left by the element.***_
 
 ---
 
 ### `position: fixed`
 
-- It is positioned relative to the viewport.
+- It is positioned relative to the viewport(screen of the browser).
 - It always stays in the same place even if the page is scrolled.
 - The top, right, bottom, and left properties are used to position the element.
 - It is pulled out of the flow of content.
@@ -291,9 +324,12 @@ _What is the meaning of `*`?_
 ### `position: absolute`
 
 - It is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed).
+**parent must have a position set to anything not-static**
 - If an absolute positioned element has no positioned ancestors, it uses the document body, and moves along with page scrolling.
 
 Note: When using this property, you will need to set the parent's position as well, anything but `static`.
+
+abslute will always remain fixed to the parent relative position
 
 ---
 
@@ -302,7 +338,7 @@ Note: When using this property, you will need to set the parent's position as we
 ```html
 <div class="container">
    <p>Hey!</p>
-   <p class="child">there!</div>
+   <p class="child">there!</p>
 </div>
 ```
 
@@ -326,7 +362,15 @@ Note: When using this property, you will need to set the parent's position as we
 - An element with greater stack order is always in front of an element with a lower stack order.
 - It only works on _positioned_ elements (absolute, relative, fixed, or sticky).
 
+default is 0
+
 - https://developer.mozilla.org/en-US/docs/Web/CSS/z-index
+
+a child element cannot have a stack(z) index higher than it's parent (remains relative to parent)
+
+use example: a dropdown menu is going to have a higher z index so that it appears on top of a page
+
+**use very sparingly**
 
 ---
 
@@ -351,15 +395,16 @@ There are other properties you can give the parent container:
 
 | property          | notes |
 | ----------------- | ----- |
-| `flex-direction`  | default is `row`
+| `flex-direction`  | default is `row` (column etc)
 | `flex-wrap`       | default is `nowrap`
-| `justify-content` | main axis
-| `align-items`     | secondary axis
+| `justify-content` | main axis (x axis)
+| `align-items`     | secondary axis (y axis)
 | `align-content`   | needs mult. rows
 
 ---
 
 The most common recipe for a container is 
+bread and butter
 
 ```css
 .container {
@@ -367,6 +412,9 @@ The most common recipe for a container is
     justify-content: center;
     align-items: center;
 }
+
+justify-content: (space-between etc)
+all the children are centered in the container
 ```
 
 ---
@@ -384,7 +432,7 @@ The most common recipe for a container is
 
 Recommended Shorthand notation:
 
-`flex: flex-grow | flex-shrink | flex-basis` 
+`flex: flex-grow (0) | flex-shrink (1) | flex-basis (auto)` 
 
 ```css
 .child {
